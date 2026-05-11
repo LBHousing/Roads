@@ -15,6 +15,22 @@ This sample shows a simple HTML page that loads a KML/KMZ file into a Google map
 - If the file is KMZ, Google Maps can often load it directly if the URL points to the `.kmz` file.
 - Use `mapTypeId: 'satellite'` to give the map an Earth-like view.
 
+## Export from ArcGIS Pro
+
+1. In ArcGIS Pro, open the map and layer(s) you want to share.
+2. Use `Share` → `KML` or `Share` → `Layer` → `Save As KML`.
+3. Choose `KMZ` for a compressed package if the map includes multiple layers or attachments.
+4. Set the output coordinate system to `WGS84` (latitude/longitude) where possible.
+5. Export only the project area layer(s) and adjust visibility/symbology before export.
+
+## Host the KML/KMZ file publicly
+
+1. Upload the exported `.kml` or `.kmz` to a public web host.
+   - GitHub Pages works well for static files.
+   - Microsoft Azure Blob Storage, AWS S3, or any public HTTP/HTTPS host also works.
+2. Confirm the file opens directly in a browser and returns a valid file response.
+3. Copy the public URL into the portal source HTML block.
+
 ## Portal integration options
 
 1. `portal-source-inline.html` — use this first if the portal allows inline HTML and inline JavaScript.
