@@ -33,13 +33,16 @@ This sample shows a simple HTML page that loads a KML/KMZ file into a Google map
 
 ## Portal integration options
 
-1. `portal-source-inline.html` — use this first if the portal allows inline HTML and inline JavaScript.
+1. `portal-source-minimal.html` — most portal-safe, minimal HTML block.
    - Replace `YOUR_API_KEY` and `YOUR_KML_URL`.
    - Paste the full block into the portal HTML source editor.
-2. `portal-source-snippet.html` — alternative if the portal accepts explicit `<script src="...">` tags.
+2. `portal-source-inline.html` — full-featured with loading messages.
    - Replace `YOUR_API_KEY` and `YOUR_KML_URL`.
    - Paste the full block into the portal HTML source editor.
-3. `portal-embed.html` — fallback if the portal allows iframe embedding.
+3. `portal-source-snippet.html` — alternative if the portal accepts explicit `<script src="...">` tags.
+   - Replace `YOUR_API_KEY` and `YOUR_KML_URL`.
+   - Paste the full block into the portal HTML source editor.
+4. `portal-embed.html` — fallback if the portal allows iframe embedding.
    - Host `index.html` on a public web server.
    - Paste the iframe snippet into the portal source block.
 
